@@ -3,7 +3,7 @@ const http = require("http");
 const path = require("path");
 const { CLIENT_RENEG_LIMIT } = require("tls");
 const url = require("url");
-const port=process.env.PORT || 8000
+const port=process.env.PORT || 8000;
 const replaceTemplate = (temp, product) => {
   let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
   output = output.replace(/{%IMAGE%}/g, product.image);
